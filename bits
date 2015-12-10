@@ -1,0 +1,54 @@
+<script src="js/jquery.als-1.7.min.js"></script>
+
+      	<script>
+      	$)(document).ready(function(){
+      		$(#horizontalList).als();
+      	});
+
+      	$("#horizontalList").als({
+      		visible_items: 4,      	
+      		scrolling_items: 1,      	
+      		orientation:"vertical",      	
+      		circular:"yes",      	
+      		auto:scroll:"yes",      
+      		interval: 4000,
+      		direction:"down",      	
+      		start_from: 3,
+      		speed: 400,
+      		easing:"linear"
+      	});
+      	</script>
+
+
+            <div class="animation-list">
+                        <ul class="animation-wrapper">
+        
+                                    <li class="animation-item">
+                                          <div class="list">
+                                                <img src="images/animation.png">
+                                                <h3>DO</h3>
+                                                <p>00:02</p>
+                                          </div>
+                                     </li>
+                                    <li class="animation-item">
+                                    <div class="list">
+                                          <img src="images/animation.png">
+                                          <h3>YOU</h3>
+                                          <p>00:02</p>
+                                    </div>
+                                    </li>
+                                    <li class="animation-item">
+                                    <div class="list">
+                                          <img src="images/animation.png">
+                                          <h3>WANT</h3>
+                                          <p>00:02</p>
+                                    </div>
+                                    </li>
+                                    <li class="animation-item">
+                                    <div class="list">
+                                          <img src="images/animation.png">
+                                          <h3>TO</h3>
+                                          <p>00:02</p>
+                                    </div>
+                                    </li>
+                  </ul>

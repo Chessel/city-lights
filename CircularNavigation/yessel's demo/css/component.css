@@ -1,0 +1,138 @@
+.csstransforms .cn-wrapper {
+  font-size: 1em;
+  width: 26em;
+  height: 26em;
+  overflow: hidden;
+  position: fixed;
+  z-index: 10;
+  bottom: 0em;
+  left: 0%;
+  border-radius: 50%;
+  margin-left: -15em;
+
+  -webkit-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  -moz-transform: scale(0.1);
+  transform: scale(0.1);
+  pointer-events: none;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+  transition: border .3s ease;
+  -webkit-transform:  rotate(90deg) scale(1);
+  -ms-transform:  rotate(90deg) scale(1);
+  -moz-transform:  rotate(90deg) scale(1);
+  transform:  rotate(90deg) scale(1);
+}
+
+.csstransforms .cn-wrapper li {
+  position: absolute;
+  font-size: 1.5em;
+  width: 10em;
+  height: 10em;
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  overflow: hidden;
+  left: 00%;
+  top: 0%;
+  margin-top: -1.3em;
+  margin-left: 0em;
+  -webkit-transition: border .3s ease;
+  -moz-transition: border .3s ease;
+
+}
+
+.csstransforms .cn-wrapper li a {
+  display: block;
+  font-size: 1.18em;
+  height: 14.5em;
+  width: 14.5em;
+  position: absolute;
+  position: fixed; /* fix the "displacement" bug in webkit browsers when using tab key */
+  bottom: -7.25em;
+  right: -7.25em;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 1.8em;
+  text-align: center;
+  -webkit-transform: skew(-25deg) rotate(-60deg) scale(1);
+  -ms-transform: skew(-25deg) rotate(-60deg) scale(1);
+  -moz-transform: skew(-25deg) rotate(-60deg) scale(1);
+  transform: skew(-25deg) rotate(-60deg) scale(1);
+  -webkit-backface-visibility: hidden;
+	-webkit-transition: opacity 0.3s, color 0.3s;
+  -moz-transition: opacity 0.3s, color 0.3s;
+  transition: opacity 0.3s, color 0.3s;
+}
+
+.csstransforms .cn-wrapper li a span {
+	font-size: 1.1em;
+	opacity: 0.7;
+}
+
+/* for a central angle x, the list items must be skewed by 90-x degrees
+in our case x=40deg so skew angle is 50deg
+items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
+
+.csstransforms .cn-wrapper li:first-child {
+  -webkit-transform: rotate(0deg) skew(25deg);
+  -ms-transform: rotate(0deg) skew(25deg);
+  -moz-transform: rotate(0deg) skew(25deg);
+  transform: rotate(0deg) skew(25deg);
+}
+
+.csstransforms .cn-wrapper li:nth-child(2) {
+  -webkit-transform: rotate(60deg) skew(25deg);
+  -ms-transform: rotate(60deg) skew(25deg);
+  -moz-transform: rotate(60deg) skew(25deg);
+  transform: rotate(60deg) skew(25deg);
+}
+
+.csstransforms .cn-wrapper li:nth-child(3) {
+  -webkit-transform: rotate(120deg) skew(25deg);
+  -ms-transform: rotate(120deg) skew(25deg);
+  -moz-transform: rotate(120deg) skew(25deg);
+  transform: rotate(120deg) skew(25deg)
+}
+
+.csstransforms .cn-wrapper li:nth-child(4) {
+  -webkit-transform: rotate(110deg) skew(25deg);
+  -ms-transform: rotate(110deg) skew(25deg);
+  -moz-transform: rotate(110deg) skew(25deg);
+  transform: rotate(110deg) skew(25deg);
+}
+
+.csstransforms .cn-wrapper li:nth-child(5) {
+  -webkit-transform: rotate(125deg) skew(25deg);
+  -ms-transform: rotate(125deg) skew(25deg);
+  -moz-transform: rotate(150deg) skew(50deg);
+  transform: rotate(150deg) skew(50deg);
+}
+
+.csstransforms .cn-wrapper li:nth-child(odd) a {
+  background-color: #a11313;
+  background-color: hsla(0, 88%, 63%, 1);
+}
+
+.csstransforms .cn-wrapper li:nth-child(even) a {
+  background-color: #a61414;
+  background-color: hsla(0, 88%, 65%, 1);
+}
+
+/* active style */
+.csstransforms .cn-wrapper li.active a {
+  background-color: #b31515;
+  background-color: hsla(0, 88%, 70%, 1);
+}
+
+
+/* hover style */
+.csstransforms .cn-wrapper li:not(.active) a:hover,
+.csstransforms .cn-wrapper li:not(.active) a:active,
+.csstransforms .cn-wrapper li:not(.active) a:focus {
+  background-color: #b31515;
+  background-color: hsla(0, 88%, 70%, 1);
+}

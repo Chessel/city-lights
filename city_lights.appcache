@@ -1,0 +1,22 @@
+CACHE MANIFEST
+#2014-12-09
+
+#chached master files.
+
+CACHE:
+
+js/jquery-1.10.2.min.js
+js/jquery-ui.min.js
+scripts/animate.js
+
+index_3.html
+style.css
+
+images/dark.png
+images/light3.png
+images/bridge.png
+
+NETWORK:
+*
+
+

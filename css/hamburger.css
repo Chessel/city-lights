@@ -1,0 +1,121 @@
+nav{
+    /*margin-top:2.5%;*/
+    z-index: 10;
+    background-color: #749ba4;
+    /*width:100%;*/
+
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    font-size: 1.5em;
+    color: #0e1532;
+
+}
+
+.toggleNav{
+    margin-top: -1.5em;
+    /*width: 80px;*/
+    height: 80px;
+    text-align: center;
+   /* line-height: 100px*/;
+
+    background-color: #749ba4;
+}
+
+.toggleNav{
+    top:0; 
+    position:absolute !important; 
+    top: auto !important; 
+    width:100%;
+    height: 80px;
+}
+
+
+.navButton{
+    bottom:-.35em; 
+    position:absolute !important; 
+    top: auto !important; 
+    width:70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    margin-left: 2em;
+
+    background-image: url("../images/icons/hamburger.svg");
+    
+}
+
+#subNavLogin{
+    position:absolute !important;
+    top:5em;
+    width:50%;
+    height: 1500px;
+    background-color: black;
+    
+    filter:alpha(opacity=60); /* IE */
+    -moz-opacity:0.6; /* Mozilla */
+    opacity: 0.75; /* CSS3 */
+
+  
+} 
+
+ #subNavLogin{
+    display: none;
+ }
+
+
+#subNavLogin  ul li a{
+    /*padding:10%;*/
+    /*border-color: white;*/
+
+    z-index: 1;
+}
+
+ul li{
+    list-style-type: none;
+    text-align: left;
+    margin: 10% 0;
+
+    border-bottom-width:3em;
+    border-bottom-color: white;
+}
+
+
+#username{
+    margin: 0 auto;
+    margin-top: 1em;
+    text-align: right;
+    margin-left: 20%;
+
+}
+
+#cart{
+    /*margin-top: .2em;*/
+    margin-top: .25em;
+    padding-top: .25em;
+    min-height: 65px;
+    background-image: url("../images/icons/cart.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+
+    text-align: right;
+    padding-right: 1em;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    color: white;
+    font-size: 1em;
+
+    cursor: pointer;
+}
+
+
+
+header nav  .ui-btn{
+    background-color: #ceffb6;
+
+    /*#6b63b9 #67346e #592656*/
+ }
+

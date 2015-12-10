@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>City Lights</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=.6, maximum-scale=.6"/>
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	
+	<link rel="apple-touch-icon" href="images/icons/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/icons/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/icons/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/icons/touch-icon-ipad-retina.png">
+
+	
+	<link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+  	<link rel="stylesheet" type="text/css" href="css/style-2.css">
+  	<link rel="stylesheet" type="text/css" href="css/hamburger.css">
+
+  	<link href='http://fonts.googleapis.com/css?family=Exo+2:400,200,600' rel='stylesheet' type='text/css'>
+  	<link rel="shortcut icon" type="image/png" href="images/icons/favicon.png"/>
+	
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-1.10.2.min.js"></script>
+  	<script src="js/jquery-ui.min.js"></script>
+  	
+  	
+</head>
+<body onload="populateUsername(); windowLoaded();">
+	<header>
+		<nav class="col col100">
+			&nbsp;
+			<div class="toggleNav" >
+				<div class="col col20 navButton">&nbsp;</div>
+			
+				<div id="subNavLogin">
+					<ul >
+						<li><a href="index.html">Home</a></li>
+						<li><a href="login.html">Login</a></li>
+						<li><a href="simulator.html">Simulator</a></li>
+						<li><a href="cart.html">Animation Cart</a></li>
+						<li><a href="cart.html">Schedule</a></li>
+						<li><a href="#payment">Payment Options</a></li>
+						<li onclick="logoutClicked()"><a href="#logout">Logout</a></li>
+					</ul>
+				</div><!--subnavLogin-->
+				
+				<div id="username" class="col col60"></div> <!--username-->
+				<!-- <div id="cart">&nbsp;</div> -->
+
+				<div id="cart" class="col col20"></div>
+				
+			</div><!--toggleNav-->
+		</nav>
+	</header>
+
+	<div class="wrapper">
+
+	&nbsp;
+		
+		<div id="content"></div>
+
+		<div class="col col100 social_media"> 
+			<div class="col col50 twitter">
+				<a href="#twitter"><img src="images/icons/twitter.svg" alt="Twitter"></a>
+			</div><!--twitter-->
+		
+			<div class="col col50 facebook">
+				<a href="#facebook"><img src="images/icons/facebook.svg" alt="Facebook"></a>
+			</div><!--facebook-->
+		</div><!--socila media-->
+
+		<div class="col col100 login">
+			<input id="login_email" class="col col100 login_email" name="login" placeholder="Email" type="text" maxlength="150">
+			<input id="password" class="col col100 password" name="Password" placeholder="Password" type="password" maxlength="150">
+			
+			<div class="col col60 next_button" onclick="loginClicked()"><a href="simulator.html">Login</a></div>
+		</div><!--next-->
+
+	</div><!--wrapper-big-->	
+</body>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/login.js"></script>
+<script src="scripts/styles.js"></script>
+</html>
